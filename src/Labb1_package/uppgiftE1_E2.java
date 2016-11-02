@@ -11,7 +11,7 @@ public class uppgiftE1_E2 {
         System.out.println(human1.getAge());
         System.out.println(human1.getName());
 
-        Human putte = new Human(25,"Putte");
+        Human putte = new Human(25,"Putte123");
         System.out.println(putte);
     }
 }
