@@ -8,5 +8,10 @@ public class attkora {
     public static void main(String[] args){
         Human human1 = new Human(21, "David");
         System.out.println(human1.toString());
+        System.out.println(human1.getAge());
+        System.out.println(human1.getName());
+
+        Human putte = new Human(25,"Putte");
+        System.out.println(putte);
     }
 }
