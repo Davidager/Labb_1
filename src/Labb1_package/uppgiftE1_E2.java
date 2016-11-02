@@ -5,7 +5,7 @@ package Labb1_package;
  */
 public class uppgiftE1_E2 {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Human human1 = new Human(21, "David");
         System.out.println(human1.toString());
         System.out.println(human1.getAge());
