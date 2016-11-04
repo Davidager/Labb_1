@@ -8,8 +8,10 @@ public class Human {
     private String name;
     private static String[] nameArray = {"Wilma", "William", "Maja", "Lucas", "Ella", "Elias", "Emma", "Oscar", "Julia",
         "Hugo", "Alice", "Viktor", "Alva", "Filip", "Linnea", "Erik", "Ida", "Emil", "Ebba", "Isak", "Elin", "Anton"};
-    private static int randomAge;
-    private static String randomName; // = nameArray[(int)(Math.random()*nameArray.length)];
+
+    public static String generateRandomName() {
+        return nameArray[(int)(Math.random()*nameArray.length)];
+    }
 
     public String toString() {
         return "namn: " + name + ", ålder: " + String.valueOf(age);
@@ -17,6 +19,14 @@ public class Human {
 
     public int getAge() {
         return age;
+    }
+
+    public void setAge(int newAge) {
+        age = newAge;
+    }
+
+    public void setName(String newName) {
+        name = newName;
     }
 
     public String getName() {
@@ -29,7 +39,7 @@ public class Human {
     }
 
     public Human() {
-        this(randomAge = (int)(Math.random() * 100), randomName = nameArray[(int)(Math.random()*nameArray.length)]);
+        this((int)(Math.random() * 100), generateRandomName());
 
 
     }

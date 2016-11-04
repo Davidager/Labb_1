@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * Created by David on 02-Nov-16.
  */
-public class uppgiftE3 {
+public class UppgiftE3 {
 
     public static void main(String[] args) {
         Human[] humanArray = new Human[15];

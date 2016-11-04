@@ -6,7 +6,7 @@ package Labb1_package;
 public class Fysiker extends Human {
     private int year;
 
-    public Fysiker(int year){
+    /*public Fysiker(int year){
         this.year = year;
     }
     public Fysiker(){
@@ -14,5 +14,5 @@ public class Fysiker extends Human {
     }
     public int getYear(){
          return (int)(1932 + Math.random()*83);
-    }
+    }*/
 }
