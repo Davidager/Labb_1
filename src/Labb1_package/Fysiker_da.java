@@ -18,7 +18,6 @@ public class Fysiker_da extends Human {
         int otherAge = otherHuman.getAge();
         int thisAge = this.getAge();
         if ((otherHuman instanceof Fysiker_da) && (thisAge == otherAge)) {   // sorterar efter årskurs om åldrarna är samma
-            System.out.println(year - ((Fysiker_da) otherHuman).getYear());
             return year - ((Fysiker_da) otherHuman).getYear();
         } else {
             return thisAge - otherAge;
