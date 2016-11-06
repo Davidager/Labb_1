@@ -29,5 +29,6 @@ public class UppgiftE4 {
         for (Human item : humfysArray) {
             System.out.println(item);
         }
+
     }
 }
