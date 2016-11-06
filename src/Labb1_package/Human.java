@@ -29,7 +29,8 @@ public class Human implements Comparable<Human> {
 
     public int compareTo(Human otherHuman) {
         int otherAge = otherHuman.getAge();
-        return age - otherAge;
+        int ageDiff = age - otherAge;
+        return ageDiff;
     }
 
     public void setName(String newName) {

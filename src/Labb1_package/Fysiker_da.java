@@ -11,8 +11,21 @@ public class Fysiker_da extends Human {
     }
 
     public String toString() {
-        return super.toString() + ", började Fysik " + String.valueOf(year);
+        return super.toString() + ", F" + String.valueOf(year).substring(2);
     }
+
+    public int compareTo(Human otherHuman) {
+        int otherAge = otherHuman.getAge();
+        int thisAge = this.getAge();
+        if ((otherHuman instanceof Fysiker_da) && (thisAge == otherAge)) {   // sorterar efter årskurs om åldrarna är samma
+            System.out.println(year - ((Fysiker_da) otherHuman).getYear());
+            return year - ((Fysiker_da) otherHuman).getYear();
+        } else {
+            return thisAge - otherAge;
+        }
+
+    }
+
 
     public Fysiker_da(int age, String name, int year) {
         super(age, name);
