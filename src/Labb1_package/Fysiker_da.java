@@ -27,7 +27,7 @@ public class Fysiker_da extends Human {
     public Fysiker_da() {
         int age = ThreadLocalRandom.current().nextInt(15, 101);  //  slumpar tillåten ålder (mellan 15 och 100)
         setAge(age);
-        setName(generateRandomName());
+        setNameRandom();
         year = ThreadLocalRandom.current().nextInt((2016 - age) + 15, 2017);   // slumpar tillåten årgång (med hänsyn till ålder)
     }
 

@@ -9,7 +9,7 @@ public class Human implements Comparable<Human> {
     private static String[] nameArray = {"Wilma", "William", "Maja", "Lucas", "Ella", "Elias", "Emma", "Oscar", "Julia",
         "Hugo", "Alice", "Viktor", "Alva", "Filip", "Linnea", "Erik", "Ida", "Emil", "Ebba", "Isak", "Elin", "Anton"};
 
-    public static String generateRandomName() {
+    private static String generateRandomName() {
         return nameArray[(int)(Math.random()*nameArray.length)];
     }
 
@@ -34,6 +34,10 @@ public class Human implements Comparable<Human> {
 
     public void setName(String newName) {
         name = newName;
+    }
+
+    public void setNameRandom() {
+        name = generateRandomName();
     }
 
     public String getName() {
